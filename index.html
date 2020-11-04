@@ -80,6 +80,113 @@
     footer ul{
       list-style: none;
     }
+
+
+    .agenda__wrapper {
+    /* background: linear-gradient(45deg, #E6007E 0%, #E6007E 18%, transparent 18%, transparent 100%) no-repeat bottom left; */
+    background: linear-gradient(-45deg, rgba(230,0,126,0) 15%, rgba(230,0,126,1) 15%, rgba(230,0,126,1) 25%, rgba(231,10,131,0) 25%, rgba(255,255,255,0) 100%);
+    background-size: 100% 38.225rem;
+    position: relative;
+    background-repeat: no-repeat;
+    }
+#agenda_shape {
+  position: absolute;
+    bottom: 0;
+    left: -0.05rem;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 38.275rem 0 0 16.375rem;
+    border-color: transparent transparent transparent #E6007E;
+}
+
+    .c-agenda {
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      -webkit-box-shadow: 0 0.75rem 0.875rem 0 rgba(60, 75, 110, 0.16);
+      box-shadow: 0 0.75rem 0.875rem 0 rgba(60, 75, 110, 0.16);
+      padding: 1rem 1.5rem 5rem;
+    }
+
+
+    .c-agenda-item {
+      display: grid;
+      grid-template-columns: 120px 200px 1fr;
+
+      margin: 0 0 10rem 0;
+
+position: relative;
+padding: 1rem;
+    }
+
+    .c-agenda-item:nth-of-type(even) {
+      background-color: #f9f9fb;
+    }
+
+
+
+    .c-agenda-item:last-of-type {
+      margin: 0;
+    }
+
+    .c-agenda-item:last-of-type::after {
+      display: none;
+    }
+
+
+    .break, .start, .end  {
+  background-color: #ffecf7 !important;
+}
+
+
+    .c-agenda-item::after {
+      content: "";
+      width: 2px;
+      height: 50px;
+      background-color: rgba(230, 0, 126, 0.4);
+      display: block;
+      position: absolute;
+    left: 50%;
+    transform: translate(-5px, 50%);
+    bottom: -50px;
+    }
+
+    .c-agenda-item__time {
+      color: #E6007E;
+    }
+    .c-agenda-item__title {
+      font-weight: bold;
+    }
+    .c-agenda-item__meta {}
+
+    .c-agenda-item__speaker {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+    "image speaker";
+
+    }
+
+    .c-agenda-item-details {
+      grid-area: speaker;
+    }
+      .c-agenda-item__name {
+      }
+      .c-agenda-item__speaker-title {
+        color: #666;
+      }
+    .c-agenda-item__speaker-image {
+      grid-area: image;
+    }
+
+    .c-agenda-item__speaker-image img {
+      width: 200px;
+      height: 200px;
+    }
+
+
+
   </style>
 
 </head>
@@ -207,11 +314,250 @@
               <br />
               <p>After the event, we'll invite attendees to additional breakout sessions in the following weeks, hosted
                 by FutureGov, facilitating discussions around the topics that interest you most. </p>
-              <br />
-              <p>Joining us at Transitions:</p>
-              <br />
+                <br />
+                <br />
+  
+                <p style="text-align: center;"><a class="cards__cta button--pink"
+                    href="https://www.eventbrite.co.uk/e/transitions-tickets-121741797995">Get your ticket</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
 
-              <ul>
+
+
+
+    <div id="whatwedo__wrapper" class="agenda__wrapper">
+      <div id="agenda__shape"></div>
+      
+      <div class="cards outer-limit">
+        <div class="container--lg container--sm">
+          <div class="cards__row">
+            <div class="cards__row--header">
+
+                <div class="c-agenda">
+
+
+                <div class="c-agenda-item start">
+                  <div class="c-agenda-item__time">9:30 - 9:45</div>
+                  <div class="c-agenda-item__title">Welcome</div>
+                  <div class="c-agenda-item__meta">
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Dominic Campbell </div>
+                      <div class="c-agenda-item__speaker-title">CEO at FutureGov</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/dominic-campbell.jpg" alt="Dominic Campbell"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-agenda-item">
+                  <div class="c-agenda-item__time">9:45 - 10:05</div>
+                  <div class="c-agenda-item__title">Keynote</div>
+                  <div class="c-agenda-item__meta">
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Cassie Robinson </div>
+                      <div class="c-agenda-item__speaker-title">Senior Head, UK Portfolio at The National Lottery Community Fund</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/cassie-robinson.jpg" alt="Cassie Robinson"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-agenda-item">
+                  <div class="c-agenda-item__time">10:05 - 10:35</div>
+                  <div class="c-agenda-item__title">Lightning Talks</div>
+                  <div class="c-agenda-item__meta">
+
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Betsy Bassis</div>
+                      <div class="c-agenda-item__speaker-title">Chief Executive Officer at NHS Blood and Transplant</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/betsy-bassis.jpg" alt="Betsy Bassis"></div>
+                    </div>
+
+
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Eddie Davies</div>
+                      <div class="c-agenda-item__speaker-title">Digital Services at HM Land Registry</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/eddie-davies.jpg" alt="Eddie Davies"></div>
+                    </div>
+
+
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Rob Walsh</div>
+                      <div class="c-agenda-item__speaker-title">Chief Executive at North East Lincolnshire Council + NHS, North East Lincolnshire CCG</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/rob-walsh.jpg" alt="Rob Walsh"></div>
+                    </div>
+                  </div>
+                  <div class="c-agenda-item__image"></div>
+                </div>
+
+                <div class="c-agenda-item">
+                  <div class="c-agenda-item__time">10:35 - 10:50</div>
+                  <div class="c-agenda-item__title">Fireside Chat</div>
+                  <div class="c-agenda-item__meta">
+
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Facilitated by Lily Dart</div>
+                      <div class="c-agenda-item__speaker-title">Experience Director at FutureGov</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/lily-dart.jpg" alt="Lily Dart"></div>
+                    </div>
+
+
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Matthew Cain</div>
+                      <div class="c-agenda-item__speaker-title">Head Of Digital and Data at London Borough of Hackney</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/matthew-cain.jpg" alt="Matthew Cain"></div>
+                    </div>
+
+
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Jennifer Wynter</div>
+                      <div class="c-agenda-item__speaker-title">Head of Benefits And Housing Needs at London Borough of Hackney</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/jennifer-wynter.jpg" alt="Jennifer Wynter"></div>
+                    </div>
+                  </div>
+                  <div class="c-agenda-item__image"></div>
+                </div>
+
+
+
+
+                <div class="c-agenda-item">
+                  <div class="c-agenda-item__time">10:50 - 11:05</div>
+                  <div class="c-agenda-item__title">Talk</div>
+                  <div class="c-agenda-item__meta">
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Darshan Sanghrajka</div>
+                      <div class="c-agenda-item__speaker-title">Founder of Super Being Labs </div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/darshan-sanghrajka.jpg" alt="Darshan Sanghrajka"></div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="c-agenda-item break">
+                  <div class="c-agenda-item__time">11:05 - 11:10</div>
+                  <div class="c-agenda-item__title">Break</div>
+                </div>
+
+
+
+
+                <div class="c-agenda-item">
+                  <div class="c-agenda-item__time">11:10 - 11:25</div>
+                  <div class="c-agenda-item__title">Talk</div>
+                  <div class="c-agenda-item__meta">
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Eileen Burbidge</div>
+                      <div class="c-agenda-item__speaker-title">Partner at Passion Capital</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/eileen-burbidge.jpg" alt="Eileen Burbidge"></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="c-agenda-item">
+                  <div class="c-agenda-item__time">11:25 - 12:05</div>
+                  <div class="c-agenda-item__title">Panel</div>
+                  <div class="c-agenda-item__meta">
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Meena Kishinani</div>
+                      <div class="c-agenda-item__speaker-title">Former Transformation Director at London Borough of Barking and Dagenham</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/meena-kishinani.jpg" alt="Meena Kishinani"></div>
+                    </div>
+
+
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Beth Blauer</div>
+                      <div class="c-agenda-item__speaker-title">Executive Director at Johns Hopkins University Centers for Civic Impact </div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/beth-blauer.jpg" alt="Beth Blauer"></div>
+                    </div>
+
+
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Henry Kippin</div>
+                      <div class="c-agenda-item__speaker-title">Director at North of Tyne Combined Authority</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/henry-kippin.jpg" alt="Henry Kippin"></div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="c-agenda-item">
+                  <div class="c-agenda-item__time">12:05 - 12:20</div>
+                  <div class="c-agenda-item__title">Talk</div>
+                  <div class="c-agenda-item__meta">
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Fiona Duncan</div>
+                      <div class="c-agenda-item__speaker-title">Chair at The Promise</div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/fiona-duncan.jpg" alt="Fiona Duncan"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-agenda-item">
+                  <div class="c-agenda-item__time">12:20 - 12:45</div>
+                  <div class="c-agenda-item__title">Keynote</div>
+                  <div class="c-agenda-item__meta">
+                    <div class="c-agenda-item__speaker">
+                      <div class="c-agenda-item-details">
+                      <div class="c-agenda-item__name">Adah Parris</div>
+                      <div class="c-agenda-item__speaker-title">Chair of Mental Health First Aid England </div>
+                      </div>
+                      <div class="c-agenda-item__image"><img width="200" src="img/adah-parris.jpg" alt="Adah Parris"></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="c-agenda-item end">
+                  <div class="c-agenda-item__time">12:45 - 1:00	</div>
+                  <div class="c-agenda-item__title">Closing Remarks </div>
+                </div>
+
+
+
+
+              </div>
+
+
+
+
+              <!--<ul>
                 
 <li><strong>Adah Parris</strong> - Chair of Mental Health First Aid England</li>
 <li><strong>Matthew Cain</strong> - Head Of Digital and Data at London Borough of Hackney</li>
@@ -225,7 +571,7 @@
 <li><strong>Darshan Sanghrajka</strong> - Founder of Super Being Labs </li>
                 
                 <li>many more to be announced</li>
-              </ul>
+              </ul>-->
               <br />
               <br />
 
